@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[export]{adjustbox}
+\usepackage{mathtools,amsthm,amssymb,icomma,upgreek,xfrac,enumerate, bbm,titlesec,lmodern,polski,derivative,geometry,multicol,titling,graphicx,url,amsmath,caption,lipsum,float,longtable,booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[hidelinks,breaklinks,pdfusetitle,pdfdisplaydoctitle]{hyperref}
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{light-gray}{gray}{0.95}
+\setlength{\droptitle}{-1cm}
+\mathtoolsset{showonlyrefs,mathic}
+\title{Analiza danych rzeczywistych przy pomocy modelu ARMA}
+\author{Zuzanna Bilińska, Joanna Kołaczek, Łukasz Simbiga, Filip Lasko}
+\date{\today}
+\newtheoremstyle{break}
+{\topsep}{\topsep}%
+{\normalfont}{}%
+{\bfseries}{}%
+{\newline}{}%
+\theoremstyle{break}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+\renewcommand{\lstlistingname}{Kod}% Listing -> Kod
+\renewcommand{\lstlistlistingname}{Lista Kodów}% List of Listings -> Lista kodów
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\clearpage
+
+\section{Spis użytych technologii}
+
+\section{Lista Plików}
+
+\section{Kolejność i sposób uruchamiania plików}
+
+\section{Schemat projektu bazy danych}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.25]{schemat.png}
+		\caption{Schemat bazy danych}
+		\label{fig:schemat}
+	\end{center}
+\end{figure}
+
+\section{Lista zależności funkcyjnych}
+
+\section{Uzasadnienie, że baza jest w EKNF}
+
+\section{Napotkane trudności}
+	
+\end{document}
