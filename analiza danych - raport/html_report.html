@@ -1,8 +1,42 @@
 
 <html>
     <head>
-        <title>team06</title>
+        <title>Wypo¿yczalnia gier planszowych</title>
         <style>
+        .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:first-child {
+  font-weight: bold;
+}
+
+.table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.table a:hover {
+  text-decoration: underline;
+}
+
             .highlight {
                 font-weight: bold;
                 color: green;
@@ -11,6 +45,9 @@
     </head>
     <body>
         <h1>Raport - analiza danych.</h1>
+        Baza danych, która powsta³a zawiera 7 tabel (customers, employees, game_purchase,
+        game_rental, game_tournaments, shop_inventory, tournaments_scores).
+        Poni¿ej przedstawiamy analizê danych w niej zawartych.
         <h2>1. Pracownicy miesi¹ca</h2>
         <table border="1" class="dataframe">
   <thead>
@@ -193,9 +230,9 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>total_score</th>
-      <th>first_name</th>
-      <th>last_name</th>
+      <th>ca³kowita punktacja</th>
+      <th>imiê</th>
+      <th>nazwisko</th>
     </tr>
   </thead>
   <tbody>
@@ -268,8 +305,8 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>purchase_income</th>
-      <th>game_title</th>
+      <th>przychód ze sprzeda¿y</th>
+      <th>nazwa gry</th>
     </tr>
   </thead>
   <tbody>
@@ -305,8 +342,8 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>rental_income</th>
-      <th>game_title</th>
+      <th>przychód z wypo¿yczeñ</th>
+      <th>nazwa gry</th>
     </tr>
   </thead>
   <tbody>
@@ -344,9 +381,9 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>purchase_income</th>
-      <th>rental_income</th>
-      <th>employees_cost</th>
+      <th>przychód ze sprzeda¿y</th>
+      <th>przychód z wypo¿yczeñ</th>
+      <th>koszt utrzymania pracowników</th>
     </tr>
   </thead>
   <tbody>
@@ -363,8 +400,164 @@
         a sum¹ miesiêcznych pensji pracowników:</p>
         <p><span class="highlight">69635.0 z³</span></p>
         
-        <h3>4.2 </h3>
-         
+        <h3>4.2 Piêciu klientów, którzy wydali najwiêcej w naszych sklepach oraz ich wydatek
+        podzielony przez iloœæ dni miêdzy pierwszym a ostatnim zakupem</h3>
+        <p> wyniki zosta³y uporz¹dkowane malej¹co a tak¿e zaokr¹glone do dwóch miejsc po przecinku </p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>imiê</th>
+      <th>nazwisko</th>
+      <th>znormalizowany wydatek</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Damian</td>
+      <td>Plotnik</td>
+      <td>2.80</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Wojciech</td>
+      <td>Rodowicz</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wiktoria</td>
+      <td>Nowak</td>
+      <td>2.57</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Marcin</td>
+      <td>Zaj¹c</td>
+      <td>2.34</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Kacper</td>
+      <td>Piasek</td>
+      <td>2.69</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h3> 4.3 Gry z najd³u¿szym okresem wypo¿yczenia </h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>imiê</th>
+      <th>nazwisko</th>
+      <th>tytu³ gry</th>
+      <th>dni wypo¿yczenia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Piotr</td>
+      <td>Nowak</td>
+      <td>Kawerna</td>
+      <td>639</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Piotr</td>
+      <td>Nowak</td>
+      <td>Orleans</td>
+      <td>639</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kacper</td>
+      <td>Nowak</td>
+      <td>Zimna Wojna</td>
+      <td>630</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Miko³aj</td>
+      <td>Nowak</td>
+      <td>T.I.M.E Stories</td>
+      <td>629</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Piotr</td>
+      <td>Rodowicz</td>
+      <td>Brass: Lancashire</td>
+      <td>620</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>£ukasz</td>
+      <td>Simbiga</td>
+      <td>Pandemic Legacy</td>
+      <td>619</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Szymon</td>
+      <td>Wieczorek</td>
+      <td>Twilight Imperium</td>
+      <td>612</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Wiktoria</td>
+      <td>Wójcik</td>
+      <td>Arkham Horror: Gra karciana</td>
+      <td>603</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Piotr</td>
+      <td>Piasek</td>
+      <td>Blood Rage</td>
+      <td>595</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Oliwia</td>
+      <td>Nowak</td>
+      <td>T.I.M.E Stories</td>
+      <td>588</td>
+    </tr>
+  </tbody>
+</table>
+        
+            <h3> 4.4 Trzy dni, w których najczêœciej wypo¿yczano gry</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>data</th>
+      <th>iloœæ wypo¿yczeñ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022-02-12</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-02-14</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2022-02-03</td>
+      <td>104</td>
+    </tr>
+  </tbody>
+</table>
     </body>
 </html>
     
