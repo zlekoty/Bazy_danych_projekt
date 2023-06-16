@@ -1,0 +1,370 @@
+
+<html>
+    <head>
+        <title>team06</title>
+        <style>
+            .highlight {
+                font-weight: bold;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Raport - analiza danych.</h1>
+        <h2>1. Pracownicy miesi¹ca</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>top_employee</th>
+      <th>total</th>
+      <th>month_r</th>
+      <th>year_r</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>Wojtek Si³ka</td>
+      <td>1355</td>
+      <td>4</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>B³a¿ej S³owik</td>
+      <td>3555</td>
+      <td>5</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Wojtek Si³ka</td>
+      <td>5295</td>
+      <td>6</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Wojtek Si³ka</td>
+      <td>4895</td>
+      <td>7</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Wojtek Si³ka</td>
+      <td>5580</td>
+      <td>8</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Adam Plotnik</td>
+      <td>6720</td>
+      <td>9</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>B³a¿ej S³owik</td>
+      <td>7270</td>
+      <td>10</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Adam Plotnik</td>
+      <td>8385</td>
+      <td>11</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Adam Plotnik</td>
+      <td>9150</td>
+      <td>12</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Wojtek Si³ka</td>
+      <td>7855</td>
+      <td>1</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>B³a¿ej S³owik</td>
+      <td>7825</td>
+      <td>2</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Adam Plotnik</td>
+      <td>10870</td>
+      <td>3</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Wiktoria Wilk</td>
+      <td>10465</td>
+      <td>4</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>B³a¿ej S³owik</td>
+      <td>10555</td>
+      <td>5</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>B³a¿ej S³owik</td>
+      <td>11240</td>
+      <td>6</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Wiktoria Wilk</td>
+      <td>12230</td>
+      <td>7</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Wiktoria Wilk</td>
+      <td>12360</td>
+      <td>8</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Wojtek Si³ka</td>
+      <td>12685</td>
+      <td>9</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Adam Plotnik</td>
+      <td>13500</td>
+      <td>10</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>Marcin Nowak</td>
+      <td>12470</td>
+      <td>11</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>Adam Plotnik</td>
+      <td>15525</td>
+      <td>12</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>Adam Plotnik</td>
+      <td>15245</td>
+      <td>1</td>
+      <td>2022</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>Pawe³ Cha³upka</td>
+      <td>7160</td>
+      <td>2</td>
+      <td>2022</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>2. Top 10 zawodników</h2>
+        <p>Najlepsi zawodnicy w turnieju szachowym:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total_score</th>
+      <th>first_name</th>
+      <th>last_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>20</td>
+      <td>Wojciech</td>
+      <td>Zaj¹c</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>18</td>
+      <td>Marcin</td>
+      <td>Rodowicz</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>18</td>
+      <td>Aleksandra</td>
+      <td>Nowak</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>16</td>
+      <td>Wojciech</td>
+      <td>Wieczorek</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15</td>
+      <td>Piotr</td>
+      <td>Zaj¹c</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>14</td>
+      <td>Adam</td>
+      <td>Kowalczyk</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>14</td>
+      <td>Maksymilian</td>
+      <td>Nowak</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>13</td>
+      <td>Oskar</td>
+      <td>Zaj¹c</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>13</td>
+      <td>Kacper</td>
+      <td>WoŸniak</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>13</td>
+      <td>Pawe³</td>
+      <td>Poter</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>3. Przychody w zale¿noœci od sprzeda¿y i wypo¿yczeñ</h2>
+        <p>Najwiêksze przychody ze sprzeda¿y:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>purchase_income</th>
+      <th>game_title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12625.00</td>
+      <td>Twilight Imperium</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12500.00</td>
+      <td>Terra Mystica</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11625.00</td>
+      <td>Dominion</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11375.00</td>
+      <td>Puerto Rico</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11125.00</td>
+      <td>Roll for the Galaxy</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Najwiêksze przychody z wypo¿yczeñ:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>rental_income</th>
+      <th>game_title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10080.00</td>
+      <td>Twilight Imperium</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>9510.00</td>
+      <td>Tzolk’in: The Mayan Calendar</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9420.00</td>
+      <td>Dominion</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9120.00</td>
+      <td>Zimna Wojna</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9090.00</td>
+      <td>Caylus</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>4. W³asne</h2>
+        <h3>4.1 Zyski za styczeñ 2022</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>purchase_income</th>
+      <th>rental_income</th>
+      <th>employees_cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>57015.0</td>
+      <td>48020.0</td>
+      <td>35400.0</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Zyski z dzia³alnoœci wypo¿yczalni gier w styczniu 2022,
+        obliczone jako ró¿nica miêdzy sum¹ z przychodów ze sprzeda¿y i wypo¿yczeñ gier,
+        a sum¹ miesiêcznych pensji pracowników:</p>
+        <p><span class="highlight">69635.0 z³</span></p>
+        
+        <h3>4.2 </h3>
+         
+    </body>
+</html>
+    
