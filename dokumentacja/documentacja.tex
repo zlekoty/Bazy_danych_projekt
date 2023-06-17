@@ -75,6 +75,32 @@
 \end{figure}
 
 \section{Lista zależności funkcyjnych}
+Zależność funkcyjna to pojęcie używane w kontekście baz danych relacyjnych, które opisuje zależność między atrybutami w tabeli. Mówiąc prościej, zależność funkcyjna oznacza, że wartość jednego lub więcej atrybutów w tabeli jednoznacznie determinuje wartość innego atrybutu.
+
+Zależność funkcyjna jest reprezentowana w postaci A -> B, gdzie A i B są zbiorami atrybutów. Oznacza to, że dla każdej kombinacji wartości atrybutów w zbiorze A, istnieje jednoznacznie określona wartość atrybutu lub atrybutów w zbiorze B. Może to oznaczać, że jeden atrybut determinuje inny, lub że grupa atrybutów determinuje inną grupę atrybutów.
+
+W rozdziale tym zostaną zaprezentowane zależności funkcyjne, wystepujące w bazie danych, której schemat został zaprezentowany na rysunku \ref{fig:schemat}. Dla każdej tabeli opiszemy występujące atrybuty oraz znajdziemy zależności funkcyjne, aby określić możliwe nadklucze, z których poźniej wybierzemy klucz głowny.
+
+\paragraph{Customers}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+        customer_id & first_name & last_name \\ \hline
+        1 & Łukasz & Simbiga\\ \hline
+        2 & Wiktoria & Simbiga \\ \hline
+        \vdots & \vdots & \vdots \\ \hline
+        1850 & Piotr & Krawczyk \\ \hline
+    \end{tabular}
+    \caption{Customers.}
+                \label{table:customers}
+\end{table}
+W tabeli \ref{customers} przedstawiono część danych wraz z przypisanymi im atrybutami:
+\begin{itemize}
+    \item $customer\_id_{INT}$ - numer klienta, przypisywany innt dla każdego klienta,
+    \item $first\_name_{STR}$ - imię klienta,
+    \item $last\_name_{STR}$ - nazwisko klienta.
+\end{itemize}
 
 \section{Uzasadnienie, że baza jest w EKNF}
 
