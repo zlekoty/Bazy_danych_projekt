@@ -3,6 +3,23 @@
     <head>
         <title>Wypoøyczalnia gier planszowych</title>
         <style>
+         table {
+      border-collapse: collapse;
+    }
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    
+    .col {
+  display: inline-block;
+}
+        
+.table-container {
+            width: 50%;
+            margin: 0 auto;
+        }
         .table {
   width: 100%;
   border-collapse: collapse;
@@ -28,14 +45,6 @@
   font-weight: bold;
 }
 
-.table a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.table a:hover {
-  text-decoration: underline;
-}
 
             .highlight {
                 font-weight: bold;
@@ -49,173 +58,149 @@
         game_rental, game_tournaments, shop_inventory, tournaments_scores).
         Poniøej przedstawiamy analizÍ danych w niej zawartych.
         <h2>1. Pracownicy miesiπca</h2>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>top_employee</th>
-      <th>total</th>
-      <th>month_r</th>
-      <th>year_r</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">imiÍ</th>
+      <th style="min-width: auto;">pe≥ny przychÛd</th>
+      <th style="min-width: auto;">miesiπc_x</th>
+      <th style="min-width: auto;">rok_x</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2</th>
       <td>Wojtek Si≥ka</td>
-      <td>1355</td>
+      <td>1215</td>
       <td>4</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>B≥aøej S≥owik</td>
-      <td>3555</td>
+      <td>3160</td>
       <td>5</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>Wojtek Si≥ka</td>
-      <td>5295</td>
+      <td>4625</td>
       <td>6</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>11</th>
       <td>Wojtek Si≥ka</td>
-      <td>4895</td>
+      <td>4305</td>
       <td>7</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>14</th>
       <td>Wojtek Si≥ka</td>
-      <td>5580</td>
+      <td>4940</td>
       <td>8</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>15</th>
       <td>Adam Plotnik</td>
-      <td>6720</td>
+      <td>5820</td>
       <td>9</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>19</th>
       <td>B≥aøej S≥owik</td>
-      <td>7270</td>
+      <td>6325</td>
       <td>10</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>21</th>
       <td>Adam Plotnik</td>
-      <td>8385</td>
+      <td>7310</td>
       <td>11</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>24</th>
       <td>Adam Plotnik</td>
-      <td>9150</td>
+      <td>7980</td>
       <td>12</td>
       <td>2020</td>
     </tr>
     <tr>
-      <th>29</th>
       <td>Wojtek Si≥ka</td>
-      <td>7855</td>
+      <td>7255</td>
       <td>1</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>32</th>
-      <td>B≥aøej S≥owik</td>
-      <td>7825</td>
+      <td>Wojtek Si≥ka</td>
+      <td>7300</td>
       <td>2</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>35</th>
       <td>Adam Plotnik</td>
-      <td>10870</td>
+      <td>10050</td>
       <td>3</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>42</th>
       <td>Wiktoria Wilk</td>
-      <td>10465</td>
+      <td>9775</td>
       <td>4</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>44</th>
       <td>B≥aøej S≥owik</td>
-      <td>10555</td>
+      <td>9885</td>
       <td>5</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>49</th>
       <td>B≥aøej S≥owik</td>
-      <td>11240</td>
+      <td>10375</td>
       <td>6</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>56</th>
       <td>Wiktoria Wilk</td>
-      <td>12230</td>
+      <td>11325</td>
       <td>7</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>61</th>
       <td>Wiktoria Wilk</td>
-      <td>12360</td>
+      <td>11460</td>
       <td>8</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>66</th>
       <td>Wojtek Si≥ka</td>
-      <td>12685</td>
+      <td>11790</td>
       <td>9</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>70</th>
       <td>Adam Plotnik</td>
-      <td>13500</td>
+      <td>12590</td>
       <td>10</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>81</th>
       <td>Marcin Nowak</td>
-      <td>12470</td>
+      <td>11585</td>
       <td>11</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>83</th>
       <td>Adam Plotnik</td>
-      <td>15525</td>
+      <td>14455</td>
       <td>12</td>
       <td>2021</td>
     </tr>
     <tr>
-      <th>91</th>
       <td>Adam Plotnik</td>
       <td>15245</td>
       <td>1</td>
       <td>2022</td>
     </tr>
     <tr>
-      <th>105</th>
       <td>Pawe≥ Cha≥upka</td>
       <td>7160</td>
       <td>2</td>
@@ -226,149 +211,126 @@
         
         <h2>2. Top 10 zawodnikÛw</h2>
         <p>Najlepsi zawodnicy w turnieju szachowym:</p>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ca≥kowita punktacja</th>
-      <th>imiÍ</th>
-      <th>nazwisko</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">ca≥kowita punktacja</th>
+      <th style="min-width: auto;">imiÍ</th>
+      <th style="min-width: auto;">nazwisko</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>20</td>
-      <td>Wojciech</td>
-      <td>Zajπc</td>
+      <td>RAFA£</td>
+      <td>PIETRZAK</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>18</td>
-      <td>Marcin</td>
-      <td>Rodowicz</td>
+      <td>JOANNA</td>
+      <td>WIECZOREK</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>18</td>
-      <td>Aleksandra</td>
-      <td>Nowak</td>
+      <td>MAREK</td>
+      <td>D•BROWSKI</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>16</td>
-      <td>Wojciech</td>
-      <td>Wieczorek</td>
+      <td>RAFA£</td>
+      <td>MICHALAK</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>15</td>
-      <td>Piotr</td>
-      <td>Zajπc</td>
+      <td>JUSTYNA</td>
+      <td>KOWALSKA</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>14</td>
-      <td>Adam</td>
-      <td>Kowalczyk</td>
+      <td>ROBERT</td>
+      <td>NOWICKI</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>14</td>
-      <td>Maksymilian</td>
-      <td>Nowak</td>
+      <td>WIES£AWA</td>
+      <td>ZAJ•C</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>13</td>
-      <td>Oskar</td>
-      <td>Zajπc</td>
+      <td>ANTONI</td>
+      <td>KRAWCZYK</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>13</td>
-      <td>Kacper</td>
-      <td>Woüniak</td>
+      <td>ZUZANNA</td>
+      <td>KOWALCZYK</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>13</td>
-      <td>Pawe≥</td>
-      <td>Poter</td>
+      <td>PATRYK</td>
+      <td>OLSZEWSKI</td>
     </tr>
   </tbody>
 </table>
         
         <h2>3. Przychody w zaleønoúci od sprzedaøy i wypoøyczeÒ</h2>
         <p>NajwiÍksze przychody ze sprzedaøy:</p>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>przychÛd ze sprzedaøy</th>
-      <th>nazwa gry</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">przychÛd ze sprzedaøy</th>
+      <th style="min-width: auto;">nazwa gry</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>12625.00</td>
+      <td>11285.00</td>
       <td>Twilight Imperium</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>12500.00</td>
+      <td>11040.00</td>
       <td>Terra Mystica</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>11625.00</td>
+      <td>10315.00</td>
       <td>Dominion</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>11375.00</td>
+      <td>10185.00</td>
       <td>Puerto Rico</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>11125.00</td>
-      <td>Roll for the Galaxy</td>
+      <td>9940.00</td>
+      <td>Fields of Arle</td>
     </tr>
   </tbody>
 </table>
         <p>NajwiÍksze przychody z wypoøyczeÒ:</p>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>przychÛd z wypoøyczeÒ</th>
-      <th>nazwa gry</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">przychÛd z wypoøyczeÒ</th>
+      <th style="min-width: auto;">nazwa gry</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>10080.00</td>
       <td>Twilight Imperium</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>9510.00</td>
       <td>Tzolkíin: The Mayan Calendar</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>9420.00</td>
       <td>Dominion</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>9120.00</td>
       <td>Zimna Wojna</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>9090.00</td>
       <td>Caylus</td>
     </tr>
@@ -377,18 +339,16 @@
         
         <h2>4. W≥asne</h2>
         <h3>4.1 Zyski za styczeÒ 2022</h3>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>przychÛd ze sprzedaøy</th>
-      <th>przychÛd z wypoøyczeÒ</th>
-      <th>koszt utrzymania pracownikÛw</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">przychÛd ze sprzedaøy</th>
+      <th style="min-width: auto;">przychÛd z wypoøyczeÒ</th>
+      <th style="min-width: auto;">koszt utrzymania pracownikÛw</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>57015.0</td>
       <td>48020.0</td>
       <td>35400.0</td>
@@ -403,128 +363,111 @@
         <h3>4.2 PiÍciu klientÛw, ktÛrzy wydali najwiÍcej w naszych sklepach oraz ich wydatek
         podzielony przez iloúÊ dni miÍdzy pierwszym a ostatnim zakupem</h3>
         <p> wyniki zosta≥y uporzπdkowane malejπco a takøe zaokrπglone do dwÛch miejsc po przecinku </p>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>imiÍ</th>
-      <th>nazwisko</th>
-      <th>znormalizowany wydatek</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">imiÍ</th>
+      <th style="min-width: auto;">nazwisko</th>
+      <th style="min-width: auto;">znormalizowany wydatek</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>Damian</td>
-      <td>Plotnik</td>
-      <td>2.80</td>
+      <td>WIOLETTA</td>
+      <td>DUDEK</td>
+      <td>2.50</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>Wojciech</td>
-      <td>Rodowicz</td>
-      <td>2.07</td>
+      <td>DAWID</td>
+      <td>WOèNIAK</td>
+      <td>2.33</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>Wiktoria</td>
-      <td>Nowak</td>
-      <td>2.57</td>
+      <td>ANTONI</td>
+      <td>JANKOWSKI</td>
+      <td>1.76</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>Marcin</td>
-      <td>Zajπc</td>
-      <td>2.34</td>
+      <td>EWA</td>
+      <td>KAMI—SKA</td>
+      <td>2.10</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>Kacper</td>
-      <td>Piasek</td>
-      <td>2.69</td>
+      <td>HALINA</td>
+      <td>PAWLAK</td>
+      <td>2.38</td>
     </tr>
   </tbody>
 </table>
         
         <h3> 4.3 Gry z najd≥uøszym okresem wypoøyczenia </h3>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>imiÍ</th>
-      <th>nazwisko</th>
-      <th>tytu≥ gry</th>
-      <th>dni wypoøyczenia</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">imiÍ</th>
+      <th style="min-width: auto;">nazwisko</th>
+      <th style="min-width: auto;">tytu≥ gry</th>
+      <th style="min-width: auto;">dni wypoøyczenia</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>Piotr</td>
-      <td>Nowak</td>
+      <td>MARIAN</td>
+      <td>SZYMA—SKI</td>
       <td>Kawerna</td>
       <td>639</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>Piotr</td>
-      <td>Nowak</td>
+      <td>ADAM</td>
+      <td>MAJEWSKI</td>
       <td>Orleans</td>
       <td>639</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>Kacper</td>
-      <td>Nowak</td>
+      <td>ZOFIA</td>
+      <td>G”RSKA</td>
       <td>Zimna Wojna</td>
       <td>630</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>Miko≥aj</td>
-      <td>Nowak</td>
+      <td>EWA</td>
+      <td>ZAJ•C</td>
       <td>T.I.M.E Stories</td>
       <td>629</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>Piotr</td>
-      <td>Rodowicz</td>
+      <td>MACIEJ</td>
+      <td>MICHALSKI</td>
       <td>Brass: Lancashire</td>
       <td>620</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>£ukasz</td>
-      <td>Simbiga</td>
+      <td>ROBERT</td>
+      <td>PAWLAK</td>
       <td>Pandemic Legacy</td>
       <td>619</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Szymon</td>
-      <td>Wieczorek</td>
+      <td>PATRYCJA</td>
+      <td>KACZMAREK</td>
       <td>Twilight Imperium</td>
       <td>612</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Wiktoria</td>
-      <td>WÛjcik</td>
+      <td>TADEUSZ</td>
+      <td>WIåNIEWSKI</td>
       <td>Arkham Horror: Gra karciana</td>
       <td>603</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Piotr</td>
-      <td>Piasek</td>
+      <td>WERONIKA</td>
+      <td>KACZMAREK</td>
       <td>Blood Rage</td>
       <td>595</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>Oliwia</td>
-      <td>Nowak</td>
+      <td>GRZEGORZ</td>
+      <td>G”RSKI</td>
       <td>T.I.M.E Stories</td>
       <td>588</td>
     </tr>
@@ -532,27 +475,23 @@
 </table>
         
             <h3> 4.4 Trzy dni, w ktÛrych najczÍúciej wypoøyczano gry</h3>
-        <table border="1" class="dataframe">
+        <table border="1" class="dataframe table table-stripped col">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>data</th>
-      <th>iloúÊ wypoøyczeÒ</th>
+    <tr style="text-align: center;">
+      <th style="min-width: auto;">data</th>
+      <th style="min-width: auto;">iloúÊ wypoøyczeÒ</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>2022-02-12</td>
       <td>119</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>2022-02-14</td>
       <td>105</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>2022-02-03</td>
       <td>104</td>
     </tr>
