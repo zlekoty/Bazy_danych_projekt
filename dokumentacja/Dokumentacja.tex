@@ -85,18 +85,19 @@
 		\item Generowanie\_danych.ipynb,
 		\item Sposób\_generowania\_danych.pdf,
 		\item Raport\_BD.ipynb,
-		\item Dokumentacja.pdf.
+		\item Dokumentacja.pdf,
+		\item html\_report.html.
 	\end{itemize}
 	\section{Kolejność i sposób uruchamiania plików}
 	\paragraph{Utworzenie bazy danych}
 	Zanim otworzysz plik sql\_in\_python.ipynb pamiętaj, że baza danych została już utworzona na serwerze giniewicz.it, więc zbędne jest uruchamianie tych plików i~ponowne tworzenie bazy danych, jednak jeżeli naszym celem jest jej kreacja, powinniśmy uruchomić plik sql\_in\_python.ipynb. Otworzyć możemy go tylko i wyłącznie za pomocą Jupyter Notebook. W notatniku za pomocą funkcji create\_db\_connection($\dots$) łączymy się z bazą danych, a następnie za pomocą odpowiednich funkcji tworzymy tabele oraz je wypełniamy. Kontekst ten został szerzej opisany w dokumencie Sposób\_generowania\_danych.pdf. \\
 	\paragraph{Analiza oraz raport}
-	Jeżeli naszym celem jest utworzenie raportu zawierającego analizę danych, należy uruchomić plik Raport\_BD.ipynb, aby następnie połączyć się z bazą danych za pomocą funkcji create\_db\_connection($\dots$). Następnie, po wywołaniu reszty funkcji, w szczególności:
+	Zanim otworzysz plik Raport\_BD.ipynb, raport możesz zobaczyć w~pliku html\_report.html. Jeżeli natomiast nie posiadamy tego dokumentu, powinniśmy go utworzyć. Uruchamiamy wtedy plik Raport\_BD.ipynb w Jupyter Notebook, aby następnie połączyć się z bazą danych za pomocą funkcji create\_db\_connection($\dots$). Następnie, po wywołaniu reszty funkcji, w~szczególności:
 	$$\begin{multlined}
 			with \ open('html\_report.html'\ ,\ 'w') \ as \  f: \\
 			f.write(html),
 	\end{multlined}$$
-	powstanie nam dokument, zapisany w html, przedstawiający raport z zawartą w nim analizą.
+	powstanie nam dokument html\_report.html, przedstawiający raport z zawartą w nim analizą. 
 	\paragraph{Dokumentacja}
 	Jeżeli chcemy poznać dodatkowe informację o projekcie Bazy danych, powinniśmy uruchomić plik Dokumentacja.pdf.
 	
